@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #181419;
+}
+
+hr{
+    border: 1px solid #9f3647;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+h2, h3 {
+    color: white;
+}
+
+.caja{
+    min-width: 170px;
+    min-height: 230px;
+    border: 1px solid #303134;
+    margin-left: 30px;
+    background-color: red;
+}
+
+.contenedor{
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px 0px 40px 0px;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+}
+
+.outer-container{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.inicio{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-image: url(../assets/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    color: white;
+}
+
+.tituloPrincipal{
+    font-size: 4rem ;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.subTituloPrincipal{
+    font-size: 2.2rem ;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.buscar{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.textoBuscar{
+    border-radius: 80px;
+    height: 50px;
+    width: 500px;
+}
+
+.botonBuscar{
+    border-radius: 80px;
+    height: 50px;
+    width: 104px;
+    padding: 0 20px;
+    border: 2px solid white
+}
+
+.tendencias{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contenedorTendencias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+}
+
+
+.cajaTendencia{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    background-color: red;
+    border-radius: 10px;
+}
+
+.pelicula{
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.botonTendencias{
+    border: 1px solid white;
+    margin-top: 50px;
+    margin-left: 20px;
+    background-color: red;
+    color: white;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    margin-bottom: 60px;
+}
+
+.footer{
+    background-color: red;
+    color: white;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerLista{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.footerListaItem{
+    margin-left: 20px;
+}
+
+.footerLink{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.volverInicio{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: black;
+    cursor: pointer;
+}
