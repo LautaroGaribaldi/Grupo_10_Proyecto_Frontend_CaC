@@ -76,12 +76,26 @@ h2, h3 {
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+.tituloBuscador{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.formularioBuscador{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .textoBuscar{
     border-radius: 80px;
     height: 50px;
-    width: 500px;
+    width: 37vw;
 }
 
 .botonBuscar{
@@ -89,18 +103,27 @@ h2, h3 {
     height: 50px;
     width: 104px;
     padding: 0 20px;
-    border: 2px solid white
+    border: 2px solid white;
+    margin: 20px 10px;
 }
 
 .tendencias{
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
     text-align: center;
     margin-top: 10px;
 }
 
+.tituloSection{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
 .contenedorTendencias{
     display: flex;
+    flex-direction: column;
+    align-content: center;
     flex-wrap: wrap;
     justify-content: center;
     gap: 60px;
@@ -114,11 +137,16 @@ h2, h3 {
     gap: 60px;
     background-color: red;
     border-radius: 10px;
+    width: 300px;
+}
+
+.linkPelicula{
+    width: 100%;
 }
 
 .pelicula{
-    width: 200px;
-    height: 300px;
+    width: 100%;
+    height: 500px;
     border-radius: 10px;
 }
 
@@ -158,4 +186,57 @@ h2, h3 {
 
     animation-name: aniVolverInicio;
     animation-duration: 0.2s;
+}
+
+@media screen and (min-width:769px){
+    .tituloBuscador{
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+    .tendencias{
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .contenedorTendencias{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 60px;
+    }
+    
+    
+    .cajaTendencia{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 60px;
+        background-color: red;
+        border-radius: 10px;
+        width: auto;
+    }
+    
+    .pelicula{
+        width: 200px;
+        height: 300px;
+        border-radius: 10px;
+    }
+    
+    .botonTendencias{
+        border: 1px solid white;
+        margin-top: 50px;
+        margin-left: 20px;
+        background-color: red;
+        color: white;
+        padding: 1rem 1rem;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-weight: 500;
+        text-decoration: none;
+        margin-bottom: 60px;
+    }   
 }

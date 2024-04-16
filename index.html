@@ -8,53 +8,12 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/stylesHeaderFooter.css">
-    <title>Document</title>
+    <title>Codo a Codo SPA</title>
 </head>
 
 <body>
     <header>
-        <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
-        </nav> -->
-    
+
         <div class="header">
 
             <div class="logo">
@@ -62,10 +21,18 @@
             </div>
             <nav class="navHeader">
                 <ul class="ulNav">
-                    <a href="" class="aNav"><li class="liNav">Tendencias</li></a>
-                    <a href="#NuestrosEspecialistas" class="aNav"><li class="liNav">Nuestros Espacialistas</li></a>
-                    <a href="" class="aNav"><li class="liNav">Registrarse</li></a>
-                    <a href="" class="aNav"><li class="liNav iniciarSesion">Iniciar Sesión</li></a>
+                    <a href="#Tendencias" class="aNav">
+                        <li class="liNav">Tendencias</li>
+                    </a>
+                    <a href="#NuestrosEspecialistas" class="aNav">
+                        <li class="liNav">Nuestros Espacialistas</li>
+                    </a>
+                    <a href="" class="aNav">
+                        <li class="liNav">Registrarse</li>
+                    </a>
+                    <a href="" class="aNav">
+                        <li class="liNav iniciarSesion">Iniciar Sesión</li>
+                    </a>
                 </ul>
             </nav>
         </div>
@@ -81,18 +48,18 @@
                 Cancela en cualquier momento.</h2>
         </section>
         <section class="buscar">
-            <h2>¿Qué estas buscando para ver?</h2>
-            <form action="">
+            <h2 class="tituloBuscador">¿Qué estas buscando para ver?</h2>
+            <form action="" class="formularioBuscador">
                 <input type="text" name="buscar" id="buscador" class="textoBuscar">
                 <input type="submit" value="Buscar" class="botonBuscar">
             </form>
         </section>
         <hr>
-        <section class="tendencias">
-            <h2>Tendencias en Argentina</h2>
+        <section class="tendencias" id="Tendencias">
+            <h2 class="tituloSection">Tendencias en Argentina</h2>
             <div class="contenedorTendencias">
                 <div class="cajaTendencia">
-                    <a href="/">
+                    <a href="/" class="linkPelicula">
                         <div class="pelicula">
                             caja
                         </div>
@@ -153,7 +120,7 @@
         </section>
         <hr>
         <section class="outer-container">
-            <h3 id="NuestrosEspecialistas">Nuestros Espacialistas</h3>
+            <h3 id="NuestrosEspecialistas" class="tituloSection">Nuestros Espacialistas</h3>
             <div class="contenedor">
                 <div class="caja">
                     caja
