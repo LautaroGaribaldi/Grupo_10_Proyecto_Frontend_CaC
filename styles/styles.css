@@ -15,7 +15,7 @@ hr{
 }
 
 h2, h3 {
-    color: white;
+    color: #1392c9;
 }
 
 .caja{
@@ -54,7 +54,7 @@ h2, h3 {
     align-items: center;
     text-align: center;
     justify-content: center;
-    background-image: url(../assets/banner.jpg);
+    background-image: url(../assets/banner0.jpg);
     background-size: cover;
     background-position: center;
     height: 90vh;
@@ -62,15 +62,23 @@ h2, h3 {
 }
 
 .tituloPrincipal{
+    padding: 20px;
+    border-radius: 10px;
     font-size: 4rem ;
     font-weight: 700;
     margin-bottom: 1rem;
+    color: #1392c9;
+    background-color: rgba(255, 255, 255, 0.553); 
 }
 
 .subTituloPrincipal{
+    padding: 20px;
+    border-radius: 10px;
     font-size: 2.2rem ;
     font-weight: 400;
     margin-bottom: 1rem;
+    color: #4d8fab;
+    background-color: rgba(255, 255, 255, 0.553); 
 }
 
 .buscar{
@@ -149,6 +157,10 @@ h2, h3 {
     width: 100%;
     height: 500px;
     border-radius: 10px;
+}
+
+.pelicula img{
+object-fit: cover;
 }
 
 .botonTendencias{
