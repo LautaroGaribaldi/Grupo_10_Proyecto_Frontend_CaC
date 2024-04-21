@@ -1,0 +1,76 @@
+.contenedorDetalle {
+    background-image: url(../assets/banner0.jpg);
+    width: 98%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 60%;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.servicioDetalle {
+    /* margin: 0 auto; */
+    display: grid;
+    grid-template-columns: 40% auto;
+    text-align: center;
+    column-gap: 10px
+        /* justify-content: flex-start; */
+
+}
+
+.imgDetalle {
+    margin-top: 40px;
+}
+
+.imgDetalle img {
+    width: 300px;
+    height: 450px;
+    border-radius: 20px;
+}
+
+.textoDetalle {
+    margin: 120px 0;
+    text-align: start;
+    color: #1392c9;
+    background-color: rgba(255, 255, 255, 0.553);
+}
+
+.textoDetalle h4 {
+    color: black;
+}
+
+.profesionalesDetalle {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.textoProfe h2, p{
+    color: black;
+}
+
+.redesSociales {
+    display: flex;
+
+}
+
+.videoRelajacion {
+    height: 90vh;
+    margin-bottom: 2vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10%;
+}
+
+.redesDetalle {
+    margin: 0 auto 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
