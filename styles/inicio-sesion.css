@@ -7,12 +7,17 @@
 main {
     width: 90%;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 200px;
 
+}
+body{
+    background-image: url("../assets/background-sesion-2.jpg");
+    background-repeat: repeat;
+    background-size: 50%;
 }
 
 .cont-form {
-    width: 320px;
+    width: 400px;
     margin:auto;
     display:flex;
     flex-direction: column;
@@ -20,7 +25,23 @@ main {
     justify-content: center;
     background-color: #97C4D7;
     border: none;
+    animation-name: animationForm;
+    animation-duration: 1s;
     border-radius: 5px;
+}
+
+@keyframes animationForm {
+
+    0% {
+        transform: scale(0%);
+        top: -4.5rem;
+        opacity: 0;
+    }
+    100% {
+        transform: scale(100%);
+        top: 0;
+        opacity: 1;
+    }
 }
 
 form{
@@ -79,6 +100,8 @@ form{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px
 }
 
 .botones-form button{
@@ -88,6 +111,11 @@ form{
     border-radius: 5px;
     border: none;
     transition: all 350ms;
+    flex:45%
+}
+
+.botones-form p{
+    color:white;
 }
 
 .botones-form button:hover{
@@ -95,7 +123,7 @@ form{
     cursor: pointer;
 }
 
-.adicionalform{
+.adicionalform a{
     font-size: 15px;
     color:white;
 }
