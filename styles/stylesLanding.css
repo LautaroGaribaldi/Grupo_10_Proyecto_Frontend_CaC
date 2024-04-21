@@ -14,20 +14,22 @@ header {
 main {
     padding: 20px;
     background-color: #D6F3F8;
+    padding-bottom: 50px;
 }
 
 section {
     margin-bottom: 30px;
     text-align: center;
-    transition: all 200ms;
+    transition: all 700ms;
 }
 
 section > img{
     width: 90%;
 }
 
-section > p{
+section p{
     text-align:center;
+    transition: all 700ms;
 }
 
 h1, h2 {
@@ -95,6 +97,7 @@ button:hover {
         gap: 10px;
         
     }
+    
     section{
         width: 45%;
         height: 400px;
@@ -147,12 +150,13 @@ button:hover {
         width: 30%;
     }
 
-    section > p {
+    section p {
         display: none;
         opacity: 0%;
-        transition: all 450ms ease;
+        transition: all 1000ms;
 
     }
+
     section:hover p{
         display: flex;
         opacity: 100%;
