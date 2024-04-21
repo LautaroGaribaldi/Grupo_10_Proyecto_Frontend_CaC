@@ -12,7 +12,7 @@
 }
 
 .servicioDetalle {
-    /* margin: 0 auto; */
+    padding: 30px;
     display: grid;
     grid-template-columns: 40% auto;
     text-align: center;
@@ -32,6 +32,7 @@
 }
 
 .textoDetalle {
+    padding: 30px;
     margin: 120px 0;
     text-align: start;
     color: #1392c9;
