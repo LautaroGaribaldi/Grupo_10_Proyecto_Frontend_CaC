@@ -1,0 +1,77 @@
+:root {
+    --color-contenedor__background--registro: #7195AF;
+    --color-form__boton-registro--background: #D6F3F8;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.registro {
+
+    padding: 3rem;
+    height: 50vh;
+
+    .container {
+        width: 90%;
+        max-width: 614px;
+        background-color: var(--color-contenedor__background--registro);
+        border-radius: 0.5rem;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            width: 90%;         
+
+            input {
+                width: 80%;
+                height: 2rem;
+                border-radius: 1rem;
+                border: 2px solid white;
+                padding-left: 0.5rem;
+            }
+
+            .registrar {
+                width: 10rem;
+                background-color: var(--color-form__boton-registro--background);
+                border: 2px solid var(--color-form__boton-registro--background);
+                font-size: 1.2rem;
+                font-weight: 400;
+            }
+
+            .terminos {
+                display: flex;
+                align-items: center;
+                font-size: 0.8rem;
+                .check {
+                    height: 1rem;
+                    width: 2rem
+                }
+
+                .textoCheck {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+/*
+@media screen and (min-width:769px){
+    .registro{
+        .container{
+            width: 614px;
+        }
+
+    }
+
+}*/
