@@ -24,7 +24,7 @@ header{
 
     0% {
 
-        top: -4.5rem;
+        top: -10rem;
         opacity: 0;
     }
     100% {
@@ -183,6 +183,21 @@ header{
 }
 
 @media screen and (min-width:769px){
+
+    @keyframes animationHeader {
+
+        0% {
+    
+            top: -4.5rem;
+            opacity: 0;
+        }
+        100% {
+    
+            top: 0;
+            opacity: 1;
+        }
+    }
+
     .header {
 
         background-color: var(--color-header-footer);
