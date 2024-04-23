@@ -208,6 +208,7 @@ body {
         position: fixed;
         animation-name: animationHeader;
         animation-duration: 5s;
+        z-index: 1;
     }
     
     .logo {
@@ -246,7 +247,7 @@ body {
     
     .navHeader {
     
-        width: 50vw;
+        width: 40rem;
         height: 10vh;
         justify-self: flex-end;
         align-self: center;

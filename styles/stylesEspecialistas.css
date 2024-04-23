@@ -12,12 +12,32 @@
     --color-body: #CED9DC;
 }
 
+@keyframes aniScroll {
+
+    0%{
+
+        opacity: 0;
+        scale: 25%;
+    }
+    100%{
+
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
 .outer-container{
     width: 80%;
     margin: auto;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 60px;
+    view-timeline-name: --content;
+    view-timeline-axis: block;
+    animation-timeline: --content;
+    animation-name: aniScroll;
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
 }
 
 .contenedor{
