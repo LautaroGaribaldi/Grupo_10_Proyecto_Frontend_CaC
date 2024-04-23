@@ -32,8 +32,8 @@
 }
 
 .caja{
-    min-width: 400px;
-    height: 230px;
+    min-width: 224px;
+    height: 153px;
     border: 5px solid #303134;
     border-radius: 500px;
     margin: 10px;
@@ -43,27 +43,68 @@
 }
 
 .imagenDoctor{
-    width: 50%;
+    width: 56%;
     height: 100%;
     object-fit: cover;
     border-radius: 100%;
+    margin-right: 8px;
 }
 
 .datosDoctor {
 
-    width: 50%;
+    width: 25%;
     background-color: var(--color-body);
     color: #303134;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 700;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
     flex-direction: column;
     border-radius: 100%;
+    margin-top: 10px;
+}
+
+.nombreEspecialista{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 @media screen and (min-width:769px){
-    
 
+.caja{
+        min-width: 400px;
+        height: 230px;
+        border: 5px solid #303134;
+        border-radius: 500px;
+        margin: 10px;
+        position: relative;
+        display: flex;
+        padding: 10px;
+    }
+
+.imagenDoctor{
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 100%;
+        margin-right: 0px;
+    }
+
+.datosDoctor {
+
+        width: 50%;
+        background-color: var(--color-body);
+        color: #303134;
+        font-size: 20px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        border-radius: 100%;
+    }
+    .nombreEspecialista{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
 }

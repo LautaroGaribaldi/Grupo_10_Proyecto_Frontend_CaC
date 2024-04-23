@@ -176,6 +176,11 @@ body {
     font-size: 1.2rem;
 }
 
+.linkDeshabilitado{
+    opacity: 0;
+    pointer-events: none;
+}
+
 @media screen and (min-width:769px){
 
     @keyframes animationHeader {
