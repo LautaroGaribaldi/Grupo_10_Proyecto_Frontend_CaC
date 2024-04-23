@@ -75,3 +75,13 @@ h3 {
     }
 
 }*/
+
+.navDescartables {
+
+    display: none;
+}
+
+.navHeaderRegistro {
+
+    width: 10rem;
+}

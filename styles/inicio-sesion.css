@@ -5,10 +5,11 @@
 }
 
 main {
-    width: 90%;
-    margin: auto;
-    margin-top: 200px;
-
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 body{
     background-image: url("../assets/background-sesion-2.jpg");
@@ -18,7 +19,6 @@ body{
 
 .cont-form {
     width: 400px;
-    margin:auto;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -126,4 +126,14 @@ form{
 .adicionalform a{
     font-size: 15px;
     color:white;
+}
+
+.navDescartables {
+
+    display: none;
+}
+
+.navHeaderLogin {
+
+    width: 10rem;
 }
