@@ -16,13 +16,11 @@
     display: grid;
     grid-template-columns: 40% auto;
     text-align: center;
-    column-gap: 10px
-        /* justify-content: flex-start; */
-
+    column-gap: 10px;
 }
 
 .imgDetalle {
-    margin-top: 40px;
+    margin-top: 100px;
 }
 
 .imgDetalle img {
@@ -34,6 +32,7 @@
 .textoDetalle {
     padding: 30px;
     margin: 120px 0;
+    border-radius: 15px;
     text-align: start;
     color: #1392c9;
     background-color: rgba(255, 255, 255, 0.553);
@@ -49,29 +48,74 @@
     justify-content: space-between;
 }
 
-.textoProfe h2, p{
+.textoProfe , p{
+    h2, p{
     color: black;
+    }
 }
 
 .redesSociales {
-    display: flex;
+  display: grid;
+  grid-template-columns: 50% auto ;
 
-}
+} 
 
 .videoRelajacion {
-    height: 90vh;
-    margin-bottom: 2vh;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 10%;
+    width: 200px;
+    margin: 20PX;
 }
 
 .redesDetalle {
-    margin: 0 auto 0 0;
-    display: flex;
-    justify-content: space-between;
+    
+    padding: 20px;
     align-items: center;
+    ul{
+        
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+
+
+
+@media screen and (max-width:769px){
+
+    .contenedorDetalle{
+        display: flex;
+        flex-direction: column;
+    }
+    .servicioDetalle {
+        padding: 30px;
+        display: grid;
+        grid-template-columns: auto;
+        text-align: center;
+        column-gap: 10px;
+    }
+
+    .imgDetalle img {
+        width: 200px;
+        height: 300px;
+        border-radius: 20px;
+    }
+
+    .profesionalesDetalle {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: space-between;
+    }
+
+    .textoDetalle{
+        margin-top: 30px;
+    }
+
+    .redesSociales{
+        grid-template-columns: auto ;
+        
+    }
+    
 }
 
