@@ -148,16 +148,17 @@ button:hover {
 @media screen and (min-width: 1200px) {
     section {
         width: 30%;
+        transition: all 1000ms
     }
 
-    section p {
+    section > p {
         display: none;
         opacity: 0%;
-        transition: all 1000ms;
+        transition: all 2000ms;
 
     }
 
-    section:hover p{
+    section:hover > p{
         display: flex;
         opacity: 100%;
     }
