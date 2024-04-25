@@ -39,6 +39,8 @@ body {
     width: 100%;
     animation-name: animationHeader;
     animation-duration: 2s;
+    position: fixed;
+    z-index: 1;
 }
 
 .logo {
