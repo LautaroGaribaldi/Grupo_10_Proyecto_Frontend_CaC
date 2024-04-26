@@ -157,13 +157,13 @@ h2, h3 {
     width: 100%;
 }
 
-.pelicula{
+.tratamiento{
     width: 100%;
     height: 500px;
     border-radius: 10px;
 }
 
-.pelicula img{
+.tratamiento img{
     object-fit: cover;
 
 }
@@ -274,7 +274,7 @@ h2, h3 {
         width: auto;
     }
     
-    .pelicula{
+    .tratamiento{
         width: 200px;
         height: 300px;
         border-radius: 10px;
