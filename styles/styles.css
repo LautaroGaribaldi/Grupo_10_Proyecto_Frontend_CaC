@@ -13,6 +13,11 @@ body{
     background-color: #181419;
 }
 
+main {
+
+    padding-top: 4rem;
+}
+
 hr{
     border: 1px solid #9f3647;
     width: 80%;
@@ -84,7 +89,7 @@ h2, h3 {
     view-timeline-axis: block;
     animation-timeline: --content;
     animation-name: aniScroll;
-    animation-range: entry 25% cover 30%;
+    animation-range: entry 25% cover 50%;
     animation-fill-mode: both;
 }
 
@@ -120,12 +125,6 @@ h2, h3 {
     margin: 0 auto;
     text-align: center;
     margin-top: 10px;
-    view-timeline-name: --content;
-    view-timeline-axis: block;
-    animation-timeline: --content;
-    animation-name: aniScroll;
-    animation-range: entry 25% cover 20%;
-    animation-fill-mode: both;
 }
 
 .tituloSection{
@@ -143,7 +142,6 @@ h2, h3 {
     gap: 60px;
 }
 
-
 .cajaTendencia{
     display: flex;
     flex-wrap: wrap;
@@ -153,11 +151,45 @@ h2, h3 {
     width: 300px;
 }
 
+.nombreTratamiento {
+
+    opacity: 0;
+    z-index: 100;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+
+    h3{
+
+        font-weight: bolder;
+        font-size: 24px;
+        color:#ffffff;
+        text-shadow: 0 0 10px #000000;
+    }
+}
+
+.nombreTratamiento:hover {
+
+    backdrop-filter: blur(5px);
+    opacity: 1;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+
+}
+
 .linkPelicula{
     width: 100%;
 }
 
 .tratamiento{
+
+    position: relative;
     width: 100%;
     height: 500px;
     border-radius: 10px;
@@ -166,17 +198,6 @@ h2, h3 {
 .tratamiento img{
     object-fit: cover;
 
-}
-
-.imagenTratamiento {
-    
-    transition: filter 0.5s;
-}
-
-.imagenTratamiento:hover {
-
-    filter: blur(5px);
-    transition: filter 0.5s ease;
 }
 
 .botonTendencias{
@@ -249,11 +270,18 @@ h2, h3 {
         font-weight: 700;
         margin-bottom: 1rem;
     }
+
     .tendencias{
         width: 80%;
         margin: 0 auto;
         text-align: center;
         margin-top: 10px;
+        view-timeline-name: --content;
+        view-timeline-axis: block;
+        animation-timeline: --content;
+        animation-name: aniScroll;
+        animation-range: entry 25% cover 30%;
+        animation-fill-mode: both;
     }
     
     .contenedorTendencias{
