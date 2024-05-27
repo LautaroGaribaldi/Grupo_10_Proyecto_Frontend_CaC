@@ -41,16 +41,18 @@
             <form action="">
                 <div class="inputform">
                     <div class="fila1">
-                        <label for="">Email: </label>
-                        <input type="email">
+                        <label for="email">Email: </label>
+                        <input type="email" id="email">
+                        <p id="errorEmail"></p>
                     </div>
                     <div class="fila2">
-                        <label for="">Contraseña: </label>
-                        <input type="password">
+                        <label for="password">Contraseña: </label>
+                        <input type="password" id="password">
+                        <p id="errorPass"></p>
                     </div>
                 </div>
                 <div class="botones-form">
-                    <button type="submit">Iniciar Sesión</button>
+                    <button type="submit" onclick="return enviar()">Iniciar Sesión</button>
                     <button type="reset">Limpiar</button>
                     <a href="./pages/registro.html">
                         <p>Registrarse</p>
@@ -65,6 +67,8 @@
             </form>
         </div>
     </main>
+
+    <script src="../Js/inicioSesion.js"></script>
 </body>
 
 </html>
