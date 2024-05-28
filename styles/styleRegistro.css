@@ -82,13 +82,18 @@ body{
     }
 }
 
-@media screen and (min-width:769px){
+@media screen and (max-width:769px){
+    
+    .navHeaderRegistro {
+
+        margin: 0 auto;
+        width: 100%;
+    }
+
     .registro{
         .container{
             margin-top: 15rem;
         }
-
-
     }
 
 }

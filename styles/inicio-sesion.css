@@ -128,11 +128,6 @@ form{
     color:white;
 }
 
-.navDescartables {
-
-    display: none;
-}
-
 .navHeaderLogin {
 
     width: 10rem;
@@ -140,4 +135,20 @@ form{
 
 .mensajeError{
     color: red;
+}
+
+@media screen and (max-width:769px){
+
+
+    .navHeaderLogin {
+        
+        width: 100%;
+
+        .ulNav {
+
+            width: 100%;
+            display: flex;
+            align-items: canter;
+        }
+    }
 }
