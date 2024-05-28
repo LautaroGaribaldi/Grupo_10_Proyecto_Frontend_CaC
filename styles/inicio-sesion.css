@@ -137,3 +137,7 @@ form{
 
     width: 10rem;
 }
+
+.mensajeError{
+    color: red;
+}

@@ -43,23 +43,23 @@
             <h3>Registro</h3>
             <form action="">
                 <input type="text" placeholder="Nombre" id="nombre" name="nombre">
-                <p id="errorNombre"></p>
+                <span id="errorNombre" class="mensajeError"></span>
                 <input type="text" placeholder="Apellido" id="apellido" name="apellido">
-                <p id="errorApellido"></p>
+                <span id="errorApellido" class="mensajeError"></span>
                 <input type="email" placeholder="Email" id="email" name="email">
-                <p id="errorEmail"></p>
+                <span id="errorEmail" class="mensajeError"></span>
                 <input type="password" placeholder="Contraseña" id="password" name="password">
-                <p id="errorPass"></p>
+                <span id="errorPass" class="mensajeError"></span>
                 <input type="date" id="fechaNac" name="fechaNac">
-                <p id="errorFechaNac"></p>
+                <span id="errorFechaNac" class="mensajeError"></span>
                 <input type="text" placeholder="Pais" id="pais" name="pais">
-                <p id="errorPais"></p>
+                <span id="errorPais" class="mensajeError"></span>
                 <div class="terminos">
                     <input class="check" type="checkbox" id="check">
                     <label class="textoCheck" for="check">Acepto términos y condiciones</label>
-                    <p id="errorCheck"></p>
                 </div>
-                <input class="registrar" type="submit" onclick='return enviar()' value="Registrarse">
+                <span id="errorCheck" class="mensajeError"></span>
+                <input class="registrar" type="button" onclick='return enviar()' value="Registrarse">
 
             </form>
 
